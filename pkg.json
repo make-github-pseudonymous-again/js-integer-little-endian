@@ -1,10 +1,10 @@
 {
-	"name": "integer",
+	"name": "integer-little-endian",
 	"code": {
 		"main": [
 			"js",
 			"dist",
-			"integer.js"
+			"integer-little-endian.js"
 		],
 		"test": [
 			"test",

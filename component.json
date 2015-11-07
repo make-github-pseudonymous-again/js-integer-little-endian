@@ -1,11 +1,11 @@
 {
-	"description": "integer numbers code bricks for JavaScript",
+	"description": "Arbitrary precision arithmetic for integers in little endian order code bricks for JavaScript",
 	"version": "0.3.2",
-	"repo": "aureooms/js-integer",
+	"repo": "aureooms/js-integer-little-endian",
 	"scripts": [
-		"js/dist/integer.js"
+		"js/dist/integer-little-endian.js"
 	],
-	"name": "aureooms-js-integer",
+	"name": "aureooms-js-integer-little-endian",
 	"license": "AGPL-3.0",
-	"main": "js/dist/integer.js"
+	"main": "js/dist/integer-little-endian.js"
 }
