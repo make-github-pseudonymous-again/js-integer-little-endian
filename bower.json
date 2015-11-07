@@ -1,6 +1,6 @@
 {
 	"name": "aureooms-js-integer-little-endian",
-	"version": "0.3.2",
+	"version": "1.0.0",
 	"description": "Arbitrary precision arithmetic for integers in little endian order code bricks for JavaScript",
 	"homepage": "http://aureooms.github.io/js-integer-little-endian/",
 	"license": "AGPL-3.0",

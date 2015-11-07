@@ -1,6 +1,6 @@
 {
 	"description": "Arbitrary precision arithmetic for integers in little endian order code bricks for JavaScript",
-	"version": "0.3.2",
+	"version": "1.0.0",
 	"repo": "aureooms/js-integer-little-endian",
 	"scripts": [
 		"js/dist/integer-little-endian.js"
