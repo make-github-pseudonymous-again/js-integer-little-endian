@@ -1,3 +1,4 @@
+import { _trim_positive , _alloc , _copy } from '.' ;
 
 export function trim_natural ( a , ai , aj ) {
 

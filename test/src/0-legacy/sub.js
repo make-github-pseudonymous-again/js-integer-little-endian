@@ -64,8 +64,8 @@ var check = function(ctor, r, e){
 				LO[i][j] = new ctor(1);
 				sub(OP[i], 0, OP[i].length, OP[j], 0, OP[j].length, RE[i][j], 0, 2);
 				sub(OP[i], lsb(OP[i]), lsb(OP[i])+1, OP[j], lsb(OP[j]), lsb(OP[j]) + 1, LO[i][j], 0, 1);
-				deepEqual(todouble(RE[i][j], 0, 2), sum, a + ' - ' + b + ' ' + RE[i][j][0] + ' ' + RE[i][j][1]);
-				deepEqual(LO[i][j][0], sum % r, a + ' - ' + b + ' % ' + r);
+				assert.deepEqual(todouble(RE[i][j], 0, 2), sum, a + ' - ' + b + ' ' + RE[i][j][0] + ' ' + RE[i][j][1]);
+				assert.deepEqual(LO[i][j][0], sum % r, a + ' - ' + b + ' % ' + r);
 			}
 		}
 

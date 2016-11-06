@@ -1,5 +1,6 @@
 import test from 'ava' ;
 import algo from 'aureooms-js-algo' ;
+import string from 'aureooms-js-string' ;
 import * as integer from '../../../src' ;
 
 var check = function(Ctor, cmp, biter, div, sub, fiter){
@@ -22,11 +23,7 @@ var check = function(Ctor, cmp, biter, div, sub, fiter){
 	// 	return b;
 	// };
 
-	var zfill_t = function(n){
-		return algo.zfill_t(n, function(c, n){
-			return algo.lfill_t(c, n, algo.strmul);
-		});
-	};
+	var zfill_t = n => string.__lfill__(0,n,string.mul) ;
 
 	var parse = integer.parse_t(r, f, biter);
 	var stringify = integer.stringify_t(r, f, fiter, zfill_t);

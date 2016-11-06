@@ -39,7 +39,7 @@ test( 'parse' , t => {
 	t.deepEqual( parse( 16 , 1000 , 'ff' ) , [ 255 ] ) ;
 	t.deepEqual( parse( 16 , 10000 , 'ff' ) , [ 255 ] ) ;
 
-	t.deepEqual( parse( 16 , 100 , 'fedcba9876543210' ) , [ 18 , 36 , 47 , 58 , 54 , 44 , 93 , 06 , 47 , 20 ] ) ;
+	t.deepEqual( parse( 16 , 100 , 'fedcba9876543210' ) , [ 18 , 36 , 47 , 58 , 54 , 44 , 93 , 6 , 47 , 20 ] ) ;
 	t.deepEqual(
 		parse( 36 , 10000 , '1234567890azertyuiopqsdfghjklmwxcvbn' ) ,
 		[ 312,6485,6500,280,6599,6167,8564,7451,522,8125,564,4362,6409,4355]
