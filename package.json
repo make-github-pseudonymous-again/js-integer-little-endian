@@ -1,0 +1,66 @@
+{
+  "name": "aureooms-js-integer-little-endian",
+  "description": "Arbitrary precision arithmetic for integers in little endian order code bricks for JavaScript",
+  "version": "1.0.0",
+  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-integer-little-endian/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "aureooms-js-algo": "^3.0.5",
+    "aureooms-js-array": "^3.1.0",
+    "aureooms-js-operator": "^1.0.2",
+    "aureooms-js-random": "^1.0.2",
+    "aureooms-js-string": "^0.2.0",
+    "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "coveralls": "^2.11.14",
+    "esdoc": "^0.4.8",
+    "nyc": "^8.4.0"
+  },
+  "homepage": "http://aureooms.github.io/js-integer-little-endian/",
+  "keywords": [
+    "arbitrary",
+    "arithmetic",
+    "bricks",
+    "ender",
+    "endian",
+    "integers",
+    "javascript",
+    "js",
+    "little",
+    "precision"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aureooms/js-integer-little-endian.git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src"
+  }
+}
