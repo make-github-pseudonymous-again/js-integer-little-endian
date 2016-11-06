@@ -1687,7 +1687,7 @@
     "access": null,
     "description": null,
     "lineNumber": 13,
-    "content": "\n/**\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} f from radix\n * @param {int} t to radix\n * @param {function} iter iterator function\n */\n\n\nexport function parse_t (t, f, iter){\n\n\tif(t >= f){\n\n\t\tif(f > 36) throw 'f > 36 not implemented';\n\n\t\tvar z = 0, log = t;\n\t\twhile(log >= f){\n\t\t\tif (log % f) break;\n\t\t\tlog /= f;\n\t\t\t++z;\n\t\t}\n\n\t\tif (log !== 1) throw 'log(f) does not divide log(t) not implemented';\n\n\t\t// immediate log(t) divides log(f)\n\t\treturn function(s, si, sj, a, ai, aj){\n\t\t\tvar len = sj - si, k = sj - z, n = Math.ceil(len / z);\n\t\t\tvar block = function(i){\n\t\t\t\ta[i] = parseInt(s.slice(Math.max(0, k), k + z), f);\n\t\t\t\tk -= z;\n\t\t\t};\n\n\t\t\titer(aj - n, aj, block);\n\n\t\t};\n\n\t}\n\telse throw 'f > t not implemented';\n\n\n}\n"
+    "content": "\n/**\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} t to radix\n * @param {int} f from radix\n * @param {function} iter iterator function\n */\n\n\nexport function parse_t (t, f, iter){\n\n\tif(t >= f){\n\n\t\tif(f > 36) throw 'f > 36 not implemented';\n\n\t\tvar z = 0, log = t;\n\t\twhile(log >= f){\n\t\t\tif (log % f) break;\n\t\t\tlog /= f;\n\t\t\t++z;\n\t\t}\n\n\t\tif (log !== 1) throw 'log(f) does not divide log(t) not implemented';\n\n\t\t// immediate log(t) divides log(f)\n\t\treturn function(s, si, sj, a, ai, aj){\n\t\t\tvar len = sj - si, k = sj - z, n = Math.ceil(len / z);\n\t\t\tvar block = function(i){\n\t\t\t\ta[i] = parseInt(s.slice(Math.max(0, k), k + z), f);\n\t\t\t\tk -= z;\n\t\t\t};\n\n\t\t\titer(aj - n, aj, block);\n\n\t\t};\n\n\t}\n\telse throw 'f > t not implemented';\n\n\n}\n"
   },
   {
     "__docId__": 87,
@@ -1711,8 +1711,8 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "f",
-        "description": "from radix"
+        "name": "t",
+        "description": "to radix"
       },
       {
         "nullable": null,
@@ -1721,8 +1721,8 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "t",
-        "description": "to radix"
+        "name": "f",
+        "description": "from radix"
       },
       {
         "nullable": null,

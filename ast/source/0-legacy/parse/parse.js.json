@@ -2169,7 +2169,7 @@
         "leadingComments": [
           {
             "type": "Block",
-            "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} f from radix\n * @param {int} t to radix\n * @param {function} iter iterator function\n ",
+            "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} t to radix\n * @param {int} f from radix\n * @param {function} iter iterator function\n ",
             "range": [
               1,
               244
@@ -2207,7 +2207,7 @@
       "leadingComments": [
         {
           "type": "Block",
-          "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} f from radix\n * @param {int} t to radix\n * @param {function} iter iterator function\n ",
+          "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} t to radix\n * @param {int} f from radix\n * @param {function} iter iterator function\n ",
           "range": [
             1,
             244
@@ -2244,7 +2244,7 @@
   "comments": [
     {
       "type": "Block",
-      "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} f from radix\n * @param {int} t to radix\n * @param {function} iter iterator function\n ",
+      "value": "*\n * Function template for number parsing.\n * Endianess provided by the iterator function\n * iterator function must be reverse ordered\n *\n * @param {int} t to radix\n * @param {int} f from radix\n * @param {function} iter iterator function\n ",
       "range": [
         1,
         244
