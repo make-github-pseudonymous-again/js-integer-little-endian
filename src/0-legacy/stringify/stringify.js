@@ -6,6 +6,7 @@
  * @param {int} f from radix
  * @param {int} t to radix
  * @param {function} iter iterator function
+ * @param {function} zfill_t zero fill string function
  */
 
 

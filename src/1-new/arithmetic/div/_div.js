@@ -29,7 +29,7 @@ import { _lt } from '../../compare' ;
 //     made on the size of the operands.
 //     Should clarify.
 
-export const _div = function ( x , r , ri , rj , b , bi , bj , q , qi ) {
+export function _div ( x , r , ri , rj , b , bi , bj , q , qi ) {
 
 	var k, t = ri + 1;
 
@@ -67,4 +67,4 @@ export const _div = function ( x , r , ri , rj , b , bi , bj , q , qi ) {
 
 	} while(true);
 
-};
+}

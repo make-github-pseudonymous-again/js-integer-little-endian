@@ -4,7 +4,7 @@
  */
 
 
-export const badd_t = function badd_t (r) {
+export function badd_t (r) {
 
 
 	/**
@@ -52,7 +52,7 @@ export const badd_t = function badd_t (r) {
  * @param {int} r base (radix)
  */
 
-export const ladd_t = function(r){
+export function ladd_t (r){
 
 	/**
 	 * Adds two little endian arrays, k >= i >= j
@@ -91,4 +91,4 @@ export const ladd_t = function(r){
 		}
 
 	};
-};
+}

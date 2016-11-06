@@ -10,7 +10,7 @@
  */
 
 
-export const parse_t = function(t, f, iter){
+export function parse_t (t, f, iter){
 
 	if(t >= f){
 
@@ -41,4 +41,4 @@ export const parse_t = function(t, f, iter){
 	else throw 'f > t not implemented';
 
 
-};
+}
