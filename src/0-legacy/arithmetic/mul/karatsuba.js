@@ -1,15 +1,6 @@
 /**
  * /!\ BLOCK MULTIPLICATION RESULT MUST HOLD IN THE JAVASCRIPT NUMBER TYPE (DOUBLE i.e. 53 bits)
  *
- *
- * @param {function} add addition algorithm
- * @param {function} sub subtraction algorithm
- * @param {function} mul multiplication algorithm
- * @param {function} copy copy algorithm
- * @param {function} calloc array allocator
- * @param {uint} r base (radix)
- *
- *
  * EXPLANATION
  * ###########
  *
@@ -54,9 +45,18 @@
  * For further reference, see
  *  - http://en.wikipedia.org/wiki/Karatsuba_algorithm
  *  - http://en.wikipedia.org/wiki/Toom–Cook_multiplication
+ *
+ * @param {function} add addition algorithm
+ * @param {function} sub subtraction algorithm
+ * @param {function} mul multiplication algorithm
+ * @param {function} calloc array allocator
+ * @param {function} mov copy algorithm
+ * @param {uint} r base (radix)
+ * @param {function} wrap recursive multiplication algorithm
+ *
  */
 
-export const bkaratsuba_t = function(add, sub, mul, calloc, mov, r, wrap){
+export function bkaratsuba_t (add, sub, mul, calloc, mov, r, wrap){
 
 	/**
 	 * Multiply two big endian arrays using karatsuba algorithm,
@@ -150,4 +150,4 @@ export const bkaratsuba_t = function(add, sub, mul, calloc, mov, r, wrap){
 
 	return karatsuba;
 
-};
+}

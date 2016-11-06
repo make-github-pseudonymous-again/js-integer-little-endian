@@ -1,5 +1,5 @@
 
-export const bmul_t = function(r){
+export function bmul_t (r){
 
 	/**
 	 * Computes product of two big endian arrays.
@@ -39,4 +39,4 @@ export const bmul_t = function(r){
 
 	return mul;
 
-};
+}

@@ -5,7 +5,7 @@
  *
  */
 
-export const bmul53_t = function(r){
+export function bmul53_t ( r ) {
 
 	/**
 	 * Multiply two blocks, result is put in a 1 or 2 blocks big endian array.
@@ -41,7 +41,7 @@ export const bmul53_t = function(r){
 
 	return mul;
 
-};
+}
 
 
 /**
@@ -51,7 +51,7 @@ export const bmul53_t = function(r){
  *
  */
 
-export const lmul53_t = function(r){
+export function lmul53_t (r){
 
 	/**
 	 * Multiply two blocks, result is put in a 1 or 2 blocks little endian array.
@@ -87,4 +87,4 @@ export const lmul53_t = function(r){
 
 	return mul;
 
-};
+}
