@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import array from 'aureooms-js-array' ;
+import { fill , copy } from 'aureooms-js-array' ;
 import * as integer from '../../../src' ;
 
 test('integer.bmul 16 big endian', function(assert){
@@ -15,9 +15,8 @@ test('integer.bmul 16 big endian', function(assert){
 
 	var r = Math.pow(2, 16);
 	var num = Uint16Array;
-	var fill = array.fill;
 
-	var mov = array.copy;
+	var mov = copy;
 	var bmul = integer.bmul_t(r);
 
 	var a = new num(4), b = new num(4), c = new num(8);
@@ -62,10 +61,9 @@ test('integer.bmul 8 big endian', function(assert){
 
 	var r = Math.pow(2, 8);
 	var num = Uint8Array;
-	var fill = array.fill;
 
 
-	var mov = array.copy;
+	var mov = copy;
 	var bmul = integer.bmul_t(r);
 
 	var a = new num(4), b = new num(4), c = new num(8);
@@ -170,9 +168,8 @@ test('integer.bmul 8 big endian bound checks', function(assert){
 
 	var r = Math.pow(2, 8);
 	var num = Uint8Array;
-	var fill = array.fill;
 
-	var mov = integer.wrapmov(array.copy);
+	var mov = integer.wrapmov(copy);
 	var bmul = integer.wrapbin(integer.bmul_t(r));
 
 	var a = new num(4), b = new num(4), c = new num(8);

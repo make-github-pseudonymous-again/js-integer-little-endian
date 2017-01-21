@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import array from 'aureooms-js-array' ;
+import { fill , copy } from 'aureooms-js-array' ;
 import * as integer from '../../../src' ;
 
 test('integer.bkaratsuba 16 big endian', function(assert){
@@ -17,8 +17,7 @@ test('integer.bkaratsuba 16 big endian', function(assert){
 	var add = integer.badd_t(r);
 	var sub = integer.bsub_t(r);
 	var calloc = function(n){ return new Uint16Array(n); };
-	var mov = array.copy;
-	var fill = array.fill;
+	var mov = copy;
 
 
 	var _bkaratsuba = integer.bkaratsuba_t(add, sub, undefined, calloc, mov, r);
@@ -68,8 +67,7 @@ test('integer.bkaratsuba 8 big endian', function(assert){
 	var add = integer.badd_t(r);
 	var sub = integer.bsub_t(r);
 	var calloc = function(n){ return new Uint8Array(n); };
-	var mov = array.copy;
-	var fill = array.fill;
+	var mov = copy;
 
 	var _bkaratsuba = integer.bkaratsuba_t(add, sub, undefined, calloc, mov, r);
 	var bkaratsuba = integer.bkaratsuba_t(add, sub, _bkaratsuba, calloc, mov, r);
@@ -178,8 +176,7 @@ test('integer.bkaratsuba 8 big endian bound checks', function(assert){
 	var add = integer.wrapbin(integer.badd_t(r));
 	var sub = integer.wrapbin(integer.bsub_t(r));
 	var calloc = function(n){ return new Uint8Array(n); };
-	var mov = integer.wrapmov(array.copy);
-	var fill = array.fill;
+	var mov = integer.wrapmov(copy);
 
 	var _bkaratsuba = integer.bkaratsuba_t(add, sub, undefined, calloc, mov, r, integer.wrapbin);
 	var bkaratsuba = integer.bkaratsuba_t(add, sub, _bkaratsuba, calloc, mov, r, integer.wrapbin);
