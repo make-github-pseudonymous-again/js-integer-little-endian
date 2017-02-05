@@ -1,7 +1,10 @@
-[js-integer-little-endian](http://aureooms.github.io/js-integer-little-endian)
+[@aureooms/js-integer-little-endian](https://aureooms.github.io/js-integer-little-endian)
 ==
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Little-Endian.svg" width="864">
+
 Integer numbers little endian library for JavaScript.
+Twin project of [@aureooms/js-integer-big-endian](https://github.com/aureooms/js-integer-big-endian).
 
 ```js
 integer.parse( 16 , 100 , 'ff' ) ; // [ 2 , 55 ]
