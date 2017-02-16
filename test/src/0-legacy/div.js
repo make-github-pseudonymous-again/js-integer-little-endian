@@ -1,6 +1,6 @@
 import test from 'ava' ;
-import algo from 'aureooms-js-algo' ;
-import string from 'aureooms-js-string' ;
+import algo from '@aureooms/js-algo' ;
+import string from '@aureooms/js-string' ;
 import * as integer from '../../../src' ;
 
 var check = function(Ctor, cmp, biter, div, sub, fiter){
