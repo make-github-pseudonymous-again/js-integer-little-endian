@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import algo from '@aureooms/js-algo' ;
+import algo from '@aureooms/js-algorithms' ;
 import string from '@aureooms/js-string' ;
 import * as integer from '../../../src' ;
 

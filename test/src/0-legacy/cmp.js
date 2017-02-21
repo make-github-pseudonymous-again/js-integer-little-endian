@@ -1,6 +1,6 @@
 import test from 'ava' ;
 import operator from  '@aureooms/js-operator' ;
-import algo from '@aureooms/js-algo' ;
+import algo from '@aureooms/js-algorithms' ;
 import * as integer from '../../../src' ;
 
 var check = function(Ctor, cmp, iter, transform){
