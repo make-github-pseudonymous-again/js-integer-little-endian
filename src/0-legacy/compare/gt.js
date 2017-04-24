@@ -5,8 +5,8 @@
  * _a_ is greater than _b_.
  */
 
-export const gt_t = function(cmp){
+export function gt_t (cmp){
 	return function (a, ai, aj, b, bi, bj) {
 		return cmp(a, ai, aj, b, bi, bj) > 0;
 	};
-};
+}

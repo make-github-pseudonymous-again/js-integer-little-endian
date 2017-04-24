@@ -1,5 +1,5 @@
 
-export const bcmp_t = function(){
+export function bcmp_t ( ) {
 
 
 	/**
@@ -32,9 +32,9 @@ export const bcmp_t = function(){
 		return 0;
 	};
 
-};
+}
 
-export const lcmp_t = function(){
+export function lcmp_t ( ) {
 
 	/**
 	 * Compares two little endian arrays, |a| >= |b|
@@ -67,4 +67,4 @@ export const lcmp_t = function(){
 
 		return 0;
 	};
-};
+}

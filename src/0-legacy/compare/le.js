@@ -5,8 +5,8 @@
  * _a_ is less or equal to _b_.
  */
 
-export const le_t = function(cmp){
+export function le_t (cmp){
 	return function (a, ai, aj, b, bi, bj) {
 		return cmp(a, ai, aj, b, bi, bj) <= 0;
 	};
-};
+}

@@ -5,8 +5,8 @@
  * _a_ is not equal to _b_.
  */
 
-export const ne_t = function(cmp){
+export function ne_t (cmp){
 	return function (a, ai, aj, b, bi, bj) {
 		return cmp(a, ai, aj, b, bi, bj) !== 0;
 	};
-};
+}

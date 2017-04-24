@@ -1,7 +1,4 @@
-
-
-
-export const bdiv_t = function(lt, sub){
+export function bdiv_t (lt, sub){
 
 	/**
 	 * Computes quotient and remainder of two big endian arrays.
@@ -70,4 +67,4 @@ export const bdiv_t = function(lt, sub){
 
 	return div;
 
-};
+}

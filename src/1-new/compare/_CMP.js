@@ -9,10 +9,10 @@
  * @param {int} bi b left
  * @param {int} bj b right
  *
- * @return {int} result 1 if a > b; 0 if a = b; -1 otherwise.
+ * @return {int} 1 if a > b; 0 if a = b; -1 otherwise.
  */
 
-export const _CMP = function(a, ai, aj, b, bi, bj){
+export function _CMP (a, ai, aj, b, bi, bj){
 
 	var tmp = aj - bj + bi;
 
@@ -26,4 +26,4 @@ export const _CMP = function(a, ai, aj, b, bi, bj){
 	}
 
 	return 0;
-};
+}

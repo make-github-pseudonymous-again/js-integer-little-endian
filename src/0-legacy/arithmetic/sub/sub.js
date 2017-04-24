@@ -2,9 +2,7 @@
 /**
  * @param {int} r base (radix)
  */
-
-
-export const bsub_t = function(r){
+export function bsub_t (r){
 
 	/**
 	 * Subtracts two big endian arrays, k >= i >= j
@@ -45,13 +43,13 @@ export const bsub_t = function(r){
 		}
 
 	};
-};
+}
+
+
 /**
  * @param {int} r base (radix)
  */
-
-
-export const lsub_t = function(r){
+export function lsub_t (r){
 
 	/**
 	 * Subtracts two little endian arrays, k >= i >= j
@@ -93,4 +91,4 @@ export const lsub_t = function(r){
 		}
 
 	};
-};
+}

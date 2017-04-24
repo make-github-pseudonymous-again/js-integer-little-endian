@@ -5,8 +5,8 @@
  * _a_ is greater or equal to _b_.
  */
 
-export const ge_t = function(cmp){
+export function ge_t (cmp){
 	return function (a, ai, aj, b, bi, bj) {
 		return cmp(a, ai, aj, b, bi, bj) >= 0;
 	};
-};
+}

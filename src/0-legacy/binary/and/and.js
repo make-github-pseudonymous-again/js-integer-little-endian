@@ -10,11 +10,11 @@
  *
  */
 
-export const and = function (a, a0, b, b0, c, c0, c1) {
+export function and (a, a0, b, b0, c, c0, c1) {
 
 	while (c0 < c1) c[c0++] = a[a0++] & b[b0++];
 
-};
+}
 
 
 /**
@@ -27,7 +27,7 @@ export const and = function (a, a0, b, b0, c, c0, c1) {
  * treats b as if it was represented with the same number of blocks as a
  */
 
-export const band_t = function(r){
+export function band_t (r){
 
 	var _r = r / 2;
 
@@ -43,7 +43,7 @@ export const band_t = function(r){
 
 	};
 
-};
+}
 
 
 
@@ -58,7 +58,7 @@ export const band_t = function(r){
  * treats b as if it was represented with the same number of blocks as a
  */
 
-export const land_t = function(r){
+export function land_t (r){
 
 	var _r = r / 2;
 
@@ -74,4 +74,4 @@ export const land_t = function(r){
 
 	};
 
-};
+}
