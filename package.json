@@ -1,6 +1,6 @@
 {
   "name": "@aureooms/js-integer-little-endian",
-  "description": "Arbitrary precision arithmetic for integers in little endian order code bricks for JavaScript",
+  "description": "Arbitrary precision arithmetic for integers in little endian order for JavaScript",
   "version": "2.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
@@ -38,12 +38,10 @@
     "esdoc": "^0.5.2",
     "nyc": "^10.2.0"
   },
-  "homepage": "http://aureooms.github.io/js-integer-little-endian/",
+  "homepage": "https://aureooms.github.io/js-integer-little-endian",
   "keywords": [
     "arbitrary",
     "arithmetic",
-    "bricks",
-    "ender",
     "endian",
     "integers",
     "javascript",
