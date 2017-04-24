@@ -3,7 +3,7 @@ import * as integer from '../../../../src' ;
 
 var check = function(Ctor){
 
-	var name = `integer.and<${Ctor.name}>`;
+	var name = `integer.and<${Ctor.name}>` ;
 
 	test(name, function(assert){
 

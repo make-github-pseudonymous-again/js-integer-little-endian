@@ -5,7 +5,7 @@ import * as integer from '../../../src' ;
 
 var runtest = function(name, n, mul53_t, hb, lb, r, calloc){
 
-	test(`${name} ${r}`, function(assert){
+	test(`${name} ${r}`, t => {
 
 		var i, x, y, z, a, b, c, d, v, w;
 
@@ -27,17 +27,17 @@ var runtest = function(name, n, mul53_t, hb, lb, r, calloc){
 			c = calloc(2);
 			d = calloc(2);
 			mul53(a, 0, 1, b, 0, 1, c, 0, 0);
-			assert.deepEqual(c, d, "c zero check 1");
+			t.deepEqual(c, d, "c zero check 1");
 
 			c = calloc(2);
 			d = calloc(2);
 			mul53(a, 0, 0, b, 0, 1, c, 0, 2);
-			assert.deepEqual(c, d, "c zero check 2");
+			t.deepEqual(c, d, "c zero check 2");
 
 			c = calloc(2);
 			d = calloc(2);
 			mul53(a, 0, 1, b, 1, 1, c, 0, 2);
-			assert.deepEqual(c, d, "c zero check 3");
+			t.deepEqual(c, d, "c zero check 3");
 
 
 			// 1 BLOCK
@@ -53,8 +53,8 @@ var runtest = function(name, n, mul53_t, hb, lb, r, calloc){
 			mul53(a, 0, 1, b, 0, 1, c, 1, 2);
 			w = c[1];
 
-			assert.deepEqual(v, w, "index independence check");
-			assert.deepEqual(v, z % r, `(${x} * ${y}) %% ${r} = ${z}`);
+			t.deepEqual(v, w, "index independence check");
+			t.deepEqual(v, z % r, `(${x} * ${y}) %% ${r} = ${z}`);
 
 
 			// 2 BLOCKS
@@ -68,7 +68,7 @@ var runtest = function(name, n, mul53_t, hb, lb, r, calloc){
 			mul53(a, 0, 1, b, 0, 1, c, 0, 2);
 			v = c[hb] * r + c[lb];
 
-			assert.deepEqual(v, z, `${x} * ${y} = ${z}`);
+			t.deepEqual(v, z, `${x} * ${y} = ${z}`);
 
 		}
 

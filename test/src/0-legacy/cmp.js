@@ -1,9 +1,10 @@
 import test from 'ava' ;
-import operator from  '@aureooms/js-operator' ;
 import algo from '@aureooms/js-algorithms' ;
+import operator from  '@aureooms/js-operator' ;
 import * as integer from '../../../src' ;
 
 var check = function(Ctor, cmp, iter, transform){
+
 	var name = `integer.cmp<${Ctor.name}, ${cmp[0]}, ${iter[0]}>`;
 
 	cmp = cmp[1];
@@ -134,7 +135,6 @@ var TEST = [
 	['14848484848', '4747474747', 1],
 	['11541548549', '1541548548', 1],
 ];
-
 
 
 var TRAITS = [

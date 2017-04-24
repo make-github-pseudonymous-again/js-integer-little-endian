@@ -4,7 +4,7 @@ import { randint } from '@aureooms/js-random' ;
 import * as integer from '../../../src' ;
 
 var check = function(ctor, r, e){
-	var endianess = e === integer.badd_t ? 'big endian' : 'little endian' ;
+	var endianess = (e === integer.badd_t) ? 'big endian' : 'little endian' ;
 	var name = `integer.add (${ctor.name}, ${r}, ${endianess})` ;
 
 	var todouble_t = function(r, e){

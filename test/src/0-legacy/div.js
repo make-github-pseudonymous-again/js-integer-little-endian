@@ -4,7 +4,8 @@ import string from '@aureooms/js-string' ;
 import * as integer from '../../../src' ;
 
 var check = function(Ctor, cmp, biter, div, sub, fiter){
-	var name = `integer.div<${Ctor.name}, ${div[0]}, ${sub[0]},${cmp[0]}, ${biter[0]}, ${fiter[0]}>`;
+
+	var name = `integer.div<${Ctor.name}, ${div[0]}, ${sub[0]}, ${cmp[0]}, ${biter[0]}, ${fiter[0]}>`;
 
 	cmp = integer.wrapcmp(cmp[1]);
 	biter = biter[1];
@@ -69,7 +70,7 @@ var check = function(Ctor, cmp, biter, div, sub, fiter){
 			var b10 = parseInt(bs, f);
 
 			assert.deepEqual(qactual, qexpected, `${a10} / ${b10} === ${qexpected}`);
-			assert.deepEqual(ractual, rexpected, `${a10} / ${b10} === ${rexpected}`);
+			assert.deepEqual(ractual, rexpected, `${a10} % ${b10} === ${rexpected}`);
 		}
 
 
@@ -92,7 +93,6 @@ var TEST = [
 	['27ad4107', '64c8', '000064c8', '000064c7'],
 
 ];
-
 
 var TRAITS = [
 	Uint8Array,
