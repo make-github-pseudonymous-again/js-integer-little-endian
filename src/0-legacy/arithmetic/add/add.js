@@ -45,14 +45,14 @@ export function badd_t (r) {
 
 	};
 
-};
+}
 
 
 /**
  * @param {int} r base (radix)
  */
 
-export function ladd_t (r){
+export function ladd_t(r){
 
 	/**
 	 * Adds two little endian arrays, k >= i >= j
