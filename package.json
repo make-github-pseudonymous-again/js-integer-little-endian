@@ -11,7 +11,7 @@
   },
   "babel": {
     "presets": [
-      "latest"
+      "env"
     ],
     "env": {
       "development": {
@@ -29,14 +29,14 @@
     "@aureooms/js-operator": "^1.0.2",
     "@aureooms/js-random": "^2.0.0",
     "@aureooms/js-string": "^0.2.0",
-    "ava": "^0.19.0",
-    "babel-cli": "^6.23.0",
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-latest": "^6.22.0",
+    "babel-preset-env": "^1.4.0",
     "codeclimate-test-reporter": "^0.4.1",
-    "coveralls": "^2.11.16",
+    "coveralls": "^2.13.0",
     "esdoc": "^0.5.2",
-    "nyc": "^10.1.2"
+    "nyc": "^10.2.0"
   },
   "homepage": "http://aureooms.github.io/js-integer-little-endian/",
   "keywords": [
