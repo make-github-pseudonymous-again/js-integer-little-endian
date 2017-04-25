@@ -5,7 +5,7 @@
  *
  */
 
-export const _ebs__ = function (alloc, iszero, setone, iseven, div2, minus1) {
+export function __ebs__ (alloc, iszero, setone, iseven, div2, minus1) {
 
 	var ebs = function (a, ai, aj, b, bi, bj, c, ci, cj) {
 
@@ -39,4 +39,4 @@ export const _ebs__ = function (alloc, iszero, setone, iseven, div2, minus1) {
 			mul(a, ai, aj, u, 0, n, c, ci, cj);
 		}
 	};
-};
+}

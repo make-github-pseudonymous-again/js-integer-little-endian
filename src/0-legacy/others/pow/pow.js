@@ -3,7 +3,7 @@
  *
  */
 
-export const __pow__ = function (alloc, isnotzero, setone, iseven, div2, minus1) {
+export function __pow__ (alloc, isnotzero, setone, iseven, div2, minus1) {
 
 	var pow = function (a, ai, aj, b, bi, bj, c, ci, cj) {
 
