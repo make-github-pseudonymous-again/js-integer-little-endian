@@ -37,7 +37,7 @@
     "codeclimate-test-reporter": "^0.4.1",
     "coveralls": "^2.13.0",
     "esdoc": "^0.5.2",
-    "nyc": "^10.2.0"
+    "nyc": "^11.0.0"
   },
   "homepage": "https://aureooms.github.io/js-integer-little-endian",
   "keywords": [
