@@ -14,7 +14,7 @@ export function stringify_t (f, t, iter, zfill_t){
 
 	if(t <= f){
 
-		if(t > 36) throw 't > 36 not implemented';
+		if(t > 36) throw new Error('t > 36 not implemented');
 
 		var z = 0;
 		while(f >= t){
@@ -23,7 +23,7 @@ export function stringify_t (f, t, iter, zfill_t){
 			++z;
 		}
 
-		if(f !== 1) throw 'log(t) does not divide log(f) not implemented';
+		if(f !== 1) throw new Error('log(t) does not divide log(f) not implemented');
 
 		var zfill = zfill_t(z);
 
@@ -36,6 +36,6 @@ export function stringify_t (f, t, iter, zfill_t){
 		};
 
 	}
-	else throw 't > f not implemented';
+	else throw new Error('t > f not implemented');
 
 }

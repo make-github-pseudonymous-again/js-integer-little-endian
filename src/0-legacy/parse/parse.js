@@ -14,7 +14,7 @@ export function parse_t ( t , f , iter ) {
 
 	if(t >= f){
 
-		if(f > 36) throw 'f > 36 not implemented';
+		if(f > 36) throw new Error('f > 36 not implemented');
 
 		var z = 0, log = t;
 		while(log >= f){
@@ -23,7 +23,7 @@ export function parse_t ( t , f , iter ) {
 			++z;
 		}
 
-		if (log !== 1) throw 'log(f) does not divide log(t) not implemented';
+		if (log !== 1) throw new Error('log(f) does not divide log(t) not implemented');
 
 		// immediate log(t) divides log(f)
 		return function(s, si, sj, a, ai, aj){
@@ -38,7 +38,7 @@ export function parse_t ( t , f , iter ) {
 		};
 
 	}
-	else throw 'f > t not implemented';
+	else throw new Error('f > t not implemented');
 
 
 }
