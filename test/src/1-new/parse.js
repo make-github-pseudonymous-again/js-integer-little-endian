@@ -3,8 +3,8 @@ import { parse } from '../../../src' ;
 
 test( 'parse' , t => {
 
-	t.throws( parse.bind( null , 16 , 16 , '!00b0C0def' ) , /invalid/ ) ;
-	t.throws( parse.bind( null , 37 , 37 , '!' ) , /not implemented/ ) ;
+	t.throws( parse.bind( null , 16 , 16 , '!00b0C0def' ) , { message: /invalid/ } ) ;
+	t.throws( parse.bind( null , 37 , 37 , '!' ) , { message: /not implemented/ } ) ;
 
 	t.deepEqual( parse( 2 , 2 , '0' ) , [ 0 ] ) ;
 	t.deepEqual( parse( 2 , 2 , '1' ) , [ 1 ] ) ;

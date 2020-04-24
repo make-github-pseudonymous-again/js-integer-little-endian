@@ -3,7 +3,7 @@ import { stringify } from '../../../src' ;
 
 test( 'stringify' , t => {
 
-	t.throws( stringify.bind( null , 37 , 37 , [0] , 0 , 1 ) , /not implemented/ ) ;
+	t.throws( stringify.bind( null , 37 , 37 , [0] , 0 , 1 ) , { message: /not implemented/ } ) ;
 
 	t.deepEqual( stringify( 2 , 2 , [ 0 ] , 0 , 1 ) , '0' ) ;
 	t.deepEqual( stringify( 2 , 2 , [ 1 ] , 0 , 1 ) , '1' ) ;
