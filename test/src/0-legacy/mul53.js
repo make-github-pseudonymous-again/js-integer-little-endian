@@ -94,7 +94,15 @@ var RANGE = [
 ];
 var i, j, k;
 
+const done = new Set();
+
 for (i = 0; i < MUL53.length; ++i)
 for (j = 0; j < ALLOC.length; ++j)
-for (k = 0; k < Rlen; ++k)
-runtest(NAME[i], n, MUL53[i], HB[i], LB[i], R(RANGE[j]), ALLOC[j]);
+for (k = 0; k < Rlen; ++k) {
+	var r;
+	do {
+		r = R(RANGE[j]);
+	} while (done.has(r)) ;
+	done.add(r);
+	runtest(NAME[i], n, MUL53[i], HB[i], LB[i], r, ALLOC[j]);
+}
