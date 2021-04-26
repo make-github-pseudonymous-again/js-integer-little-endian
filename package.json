@@ -24,7 +24,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-integer-little-endian/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-integer-little-endian/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -66,7 +66,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aureooms/js-integer-little-endian.git"
+    "url": "https://github.com/make-github-pseudonymous-again/js-integer-little-endian.git"
   },
   "scripts": {
     "build": "rm -rf lib && babel src -d lib",
