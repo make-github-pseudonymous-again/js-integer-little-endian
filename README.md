@@ -1,4 +1,4 @@
-[@aureooms/js-integer-little-endian](https://aureooms.github.io/js-integer-little-endian)
+[@aureooms/js-integer-little-endian](https://make-github-pseudonymous-again.github.io/js-integer-little-endian)
 ==
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Little-Endian.svg" width="864">
@@ -23,7 +23,7 @@ integer.stringify( 100 , 16 , [ 2 , 55 ] ) ; // 'ff'
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-integer-little-endian.svg)](https://codeclimate.com/github/aureooms/js-integer-little-endian/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-integer-little-endian/master.svg)](https://codecov.io/gh/aureooms/js-integer-little-endian)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-integer-little-endian.svg)](https://codeclimate.com/github/aureooms/js-integer-little-endian/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-integer-little-endian/badge.svg)](https://aureooms.github.io/js-integer-little-endian/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-integer-little-endian/badge.svg)](https://make-github-pseudonymous-again.github.io/js-integer-little-endian/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-integer-little-endian)](https://bundlephobia.com/result?p=@aureooms/js-integer-little-endian)
 
 
